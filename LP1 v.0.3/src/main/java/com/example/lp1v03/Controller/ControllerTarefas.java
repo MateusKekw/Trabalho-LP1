@@ -4,6 +4,7 @@ import com.example.lp1v03.model.*;
 import com.example.lp1v03.util.HibernateUtil;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -11,8 +12,11 @@ import javafx.collections.FXCollections;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class ControllerTarefas {
+
+public class ControllerTarefas implements Initializable {
     @FXML
     private TableView<Tarefas> tarefasTable;
     @FXML
@@ -31,11 +35,13 @@ public class ControllerTarefas {
 
 
     // cuidado com essa parte do código, ela dá erro
-    /*public void initialize() {
-       configureTable();
-        loadTarefas();
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        //configureTable();
+        //loadTarefas();
+        System.out.println("foi");
     }
-
+/*
 
     private void configureTable() {
         tituloColumn.setCellValueFactory(new PropertyValueFactory<>("titulo"));
@@ -69,8 +75,8 @@ public class ControllerTarefas {
         } finally {
             session.close();
         }
-    }*/
-
+    }
+*/
     // Outros métodos de controle da interface do usuário
     // Por exemplo, métodos para adicionar, editar e excluir tarefas, notificações, etc.
 
@@ -78,4 +84,6 @@ public class ControllerTarefas {
         // Implemente a lógica para obter o usuário logado, por exemplo, através da autenticação.
         return null;
     }
+
+
 }
