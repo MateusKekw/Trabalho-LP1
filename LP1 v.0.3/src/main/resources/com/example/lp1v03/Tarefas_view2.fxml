@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.lp1v03.Controller.ControllerTarefas">
+    <children>
+        <MenuBar VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Nova Tarefa" />
+                        <MenuItem mnemonicParsing="false" text="Abrir Tarefa" />
+                        <MenuItem mnemonicParsing="false" text="Fechar Tarefa" />
+                        <MenuItem mnemonicParsing="false" text="Salvar" />
+                        <MenuItem mnemonicParsing="false" text="Salvar como..." />
+                        <MenuItem mnemonicParsing="false" text="Reverter" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Configurações" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Sair" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem mnemonicParsing="false" text="Paste" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Select All" />
+                        <MenuItem mnemonicParsing="false" text="Unselect All" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: lightblue;" VBox.vgrow="ALWAYS">
+            <children>
+                <AnchorPane prefHeight="375.0" prefWidth="171.0" style="-fx-background-color: skyblue;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="57.0" layoutY="14.0" style="&#10;" text="Tarefas" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="18.0" layoutY="336.0" mnemonicParsing="false" text="Adicionar nova tarefa" />
+                        <Accordion layoutX="18.0" layoutY="50.0" prefHeight="244.0" prefWidth="135.0" style="-fx-background-color: skyblue;">
+                            <panes>
+                                <TitledPane animated="false" style="-fx-background-color: skyblue;" text="Ciências Naturais">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="14.0" text="Tarefa 1" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" prefHeight="40.0" prefWidth="135.0" text="Matemática">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="133.0" style="-fx-background-color: lightblue;">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="14.0" text="Tarefa 1" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" text="Ciências Humanas">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="14.0" text="Tarefa 1" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" text="Linguagens">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="14.0" text="Tarefa 1" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" text="Técnico">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+                                            <children>
+                                                <Label layoutX="14.0" layoutY="14.0" text="Tarefa 1" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                            </panes>
+                        </Accordion>
+                    </children>
+                </AnchorPane>
+                <Label alignment="CENTER" layoutX="181.0" layoutY="14.0" prefHeight="69.0" prefWidth="234.0" style="&#10;" text="Cadastro" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Calibri" size="48.0" />
+                    </font>
+                </Label>
+                <ImageView blendMode="MULTIPLY" fitHeight="150.0" fitWidth="200.0" layoutX="181.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../Downloads/perfil.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="331.0" layoutY="72.0" prefHeight="34.0" prefWidth="86.0" style="&#10;" text="Nome" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Calibri" size="23.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="343.0" layoutY="106.0" prefHeight="25.0" prefWidth="196.0" />
+                <Label alignment="CENTER" layoutX="343.0" layoutY="130.0" prefHeight="34.0" prefWidth="200.0" style="&#10;" text="Nome de Usuário" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Calibri" size="23.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="343.0" layoutY="164.0" prefHeight="25.0" prefWidth="196.0" />
+                <Label alignment="CENTER" layoutX="343.0" layoutY="189.0" prefHeight="34.0" prefWidth="67.0" style="&#10;" text="Senha" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Calibri" size="23.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="337.0" layoutY="247.0" prefHeight="34.0" prefWidth="196.0" style="&#10;" text="Confirmar Senha" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Calibri" size="23.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="343.0" layoutY="222.0" prefHeight="25.0" prefWidth="196.0" />
+                <TextField layoutX="343.0" layoutY="281.0" prefHeight="25.0" prefWidth="196.0" />
+                <Button layoutX="343.0" layoutY="318.0" mnemonicParsing="false" text="Criar Conta" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
